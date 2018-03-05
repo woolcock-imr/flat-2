@@ -41,7 +41,7 @@
         }
         //-------------------------------------
         var load_data=function(){
-            var sql="select top 1 Login_ID=@('Login_ID'),Password= @('Password'),List= @('List') from [TABLE-"+setup_pid+"] where PUID="+record.UID;
+            var sql="select top 1 Information from [TABLE-"+setup_pid+"] where PUID="+record.UID;
 			//sql=sql.replace(/@\('/g,"JSON_VALUE(Information,'$.");
             var req_data={ cmd:"query_records",sql:sql}
             $VmAPI.request({data:req_data,callback:function(res){

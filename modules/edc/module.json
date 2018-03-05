@@ -1,8 +1,9 @@
 {
 	"modules":
 	{
-		"randomisation_sleep":  {"table_id":"20010891","url":"modules/edc/task/randomisation.html"},
-		"randomisation-obesity":{"table_id":"20010892","url":"modules/edc/task/randomisation.html"},
+		"randomisation-sleep":  {"table_id":"20010891","url":"modules/edc/task/randomisation-sleep.html"},
+		"randomised-sleep-query":  {"table_id":"20010891","url":"modules/edc/query/randomised-sleep-query.html"},
+		"randomisation-sleep-import":{"table_id":"20010891","url":"modules/edc/task/randomisation-sleep-import.html"},
 		"adverse-event":       	{"table_id":"20010824","url":"modules/edc/task/adverse-event.html"},
 	    "concom-medication":   	{"table_id":"20010826","url":"modules/edc/task/concom-medication.html"},
 	    "file-notes":          	{"table_id":"20010822","url":"modules/edc/task/file-notes.html"},

@@ -1,6 +1,9 @@
 {
 	"modules":
 	{
+		"randomisation-sleep":  {"table_id":"20010891","url":"modules/edc/task/randomisation-sleep.html"},
+		"randomised-sleep-query":  {"table_id":"20010891","url":"modules/edc/query/randomised-sleep-query.html"},
+		"randomisation-sleep-import":{"table_id":"20010891","url":"modules/edc/task/randomisation-sleep-import.html"},
 		"adverse-event":       	{"table_id":"20009731","url":"modules/edc/task/adverse-event.html"},
 	    "concom-medication":   	{"table_id":"20009732","url":"modules/edc/task/concom-medication.html"},
 	    "file-notes":          	{"table_id":"20009733","url":"modules/edc/task/file-notes.html"},

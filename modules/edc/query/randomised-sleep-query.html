@@ -1,0 +1,42 @@
+<section>
+    VmInclude:__COMPONENT__/grid/grid.v3.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+        VmInclude:__COMPONENT__/grid/grid.v3.js
+        //------------------------
+        _fields='Record_ID,Study_ID,Screening_Number,_Hidden|Clinic_of_Origin,Randomisation_Number,Tx,Initials,Gender,DOB'
+        //------------------------
+        var prefix=$vm.module_list[$vm.vm['__ID'].name].prefix; if(prefix==undefined) prefix="";
+        //-------------------------------------
+        var participant_pid=$vm.module_list[prefix+'participant'].table_id;
+        //-------------------------------------
+        $('#D__ID').on('load',function(){    _set_req(); _request_data(); })
+        $('#D__ID').on('back',function(){    _set_req(); _request_data(); })
+        //-------------------------------------
+        var _set_req=function(){
+            $('#new__ID').hide();$('#save__ID').hide();
+            //-------------------
+            var sql="with tb as (select Tx=S1,RN=V1 from [TABLE-"+_db_pid+"]) ";
+            sql+="select Information,Tx,Record_ID=UID,ID from [TABLE-"+participant_pid+"] join tb on RN=V1 ";
+            //-------------------
+            _req={cmd:'query_records',sql:sql}
+        }
+        _cell_render=function(records,I,field,td,set_value,source){
+            switch(field){
+            }
+        }
+
+    }
+</script>
+<style>
+    VmInclude:__COMPONENT__/grid/grid.v3.css
+    ul.ui-autocomplete.ui-menu{font-size:12px}
+    .ui-autocomplete li:hover{
+        color:White;
+        background:#96B202;
+        font-weight:normal;
+        outline:none;
+    }
+</style>

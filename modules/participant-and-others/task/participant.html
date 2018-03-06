@@ -19,6 +19,7 @@
         _cell_render=function(records,I,field,td,set_value,source){
             switch(field){
 				case 'UID':
+                case 'Randomised_by':
                     records[I].vm_readonly[field]=true;
                     break;
                 case '_Data_Entry':
@@ -75,7 +76,7 @@
     								if(res.records.length==1){
     									var RN=parseInt(res.records[0].RN)+1;
     									RN=RN.toString()
-                                        RN='R'+RN;
+                                        //RN='R'+RN;
     									td.html(RN);
                                         records[I].Randomised_by=$vm.user;
     									set_value(RN,records,I,field);
@@ -107,7 +108,7 @@
         }
         //-------------------------------------
 		_before_submit=function(record,dbv){
-			//dbv.S2=record.Study_ID;
+			dbv.V1=record.Randomisation_Number;
 			return true;
         }
         //-------------------------------------

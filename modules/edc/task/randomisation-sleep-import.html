@@ -9,7 +9,7 @@
         if($vm.module_list['_system_import_dialog_module']===undefined) $vm.module_list['_system_import_dialog_module']={table_id:'',url:'__COMPONENT__/dialog/import_dialog_module.html'};
         $vm.load_module_by_name('_system_import_dialog_module','',{})
         //-------------------------------------
-        _fields="_Form,RN|RN_sleep,Tx";
+        _fields="_Form,RN,Tx";
         _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete";
         //var check_field='LLT_ID';
         //-------------------------------------
@@ -17,7 +17,7 @@
         //-------------------------------------
         _before_submit=function(record,dbv){
             dbv.S1=''; if(record.Tx!=='') dbv.S1=record.Tx;
-            dbv.V1=0; if(record.RN_sleep!=='') dbv.V1=record.RN_sleep;
+            dbv.V1=0; if(record.RN!=='') dbv.V1=record.RN;
         };
         //-------------------------------------
         $('#import__ID').on('click',function(){

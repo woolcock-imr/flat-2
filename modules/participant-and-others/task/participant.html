@@ -108,7 +108,8 @@
         }
         //-------------------------------------
 		_before_submit=function(record,dbv){
-			dbv.V1=record.Randomisation_Number;
+            //dbv.V1=0;
+			if(record.Randomisation_Number!=undefined && record.Randomisation_Number!='') dbv.V1=record.Randomisation_Number;
 			return true;
         }
         //-------------------------------------

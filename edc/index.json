@@ -1,0 +1,89 @@
+{
+	"modules":
+	{
+		"randomisation-sleep":  {"table_id":"20010891","url":"edc/modules/randomisation-sleep.html"},
+		"randomised-sleep-query":  {"table_id":"20010891","url":"edc/query/randomised-sleep-query.html"},
+		"randomisation-sleep-import":{"table_id":"20010891","url":"edc/modules/randomisation-sleep-import.html"},
+		"adverse-event":       	{"table_id":"20010824","url":"edc/modules/adverse-event.html"},
+	    "concom-medication":   	{"table_id":"20010826","url":"edc/modules/concom-medication.html"},
+	    "file-notes":          	{"table_id":"20010822","url":"edc/modules/file-notes.html"},
+	    "screening-visit-date":	{"table_id":"20010827","url":"edc/modules/visit-date.html"},
+	    "screening-anthro":    	{"table_id":"20010829","url":"edc/modules/anthro.html"},
+	    "screening-ess":       	{"table_id":"20010831","url":"edc/modules/ess.html"},
+	    "baseline-visit-date": 	{"table_id":"20010832","url":"edc/modules/visit-date.html"},
+	    "baseline-minmod":		{"table_id":"20010837","url":"edc/modules/minmod.html"},
+	    "baseline-anthro":     	{"table_id":"20010833","url":"edc/modules/anthro.html"},
+	    "baseline-dxabis":		{"table_id":"20010834","url":"edc/modules/dxabis.html"},
+	    "baseline-bloods":		{"table_id":"20010835","url":"edc/modules/bloods.html"},
+	    "baseline-ess":        	{"table_id":"20010836","url":"edc/modules/ess.html"},
+	    "baseline-fosq":		{"table_id":"20010838","url":"edc/modules/fosq.html"},
+	    "baseline-dass":		{"table_id":"20010839","url":"edc/modules/dass.html"},
+	    "baseline-iwqol":		{"table_id":"20010841","url":"edc/modules/iwqol.html"},
+	    "baseline-ipaq":		{"table_id":"20010843","url":"edc/modules/ipaq.html"},
+	    "baseline-scoring-file-upload":{"table_id":"20010840","url":"edc/modules/file-upload.html"},
+	    "month-2-visit-date":	{"table_id":"20010847","url":"edc/modules/visit-date.html"},
+	    "month-2-psg":			{"table_id":"20010848","url":"edc/modules/file-upload.html"},
+	    "month-2-minmod":		{"table_id":"20010849","url":"edc/modules/minmod.html"},
+	    "month-2-anthro":     	{"table_id":"20010850","url":"edc/modules/anthro.html"},
+	    "month-2-dxabis":		{"table_id":"20010851","url":"edc/modules/dxabis.html"},
+	    "month-2-bloods":		{"table_id":"20010852","url":"edc/modules/bloods.html"},
+	    "month-2-ess":			{"table_id":"20010853","url":"edc/modules/ess.html"},
+	    "month-2-fosq":			{"table_id":"20010855","url":"edc/modules/fosq.html"},
+	    "month-2-dass":			{"table_id":"20010856","url":"edc/modules/dass.html"},
+	    "month-2-iwqol":		{"table_id":"20010858","url":"edc/modules/iwqol.html"},
+	    "month-2-ipaq":			{"table_id":"20010860","url":"edc/modules/ipaq.html"},
+	    "month-9-visit-date":	{"table_id":"20010863","url":"edc/modules/visit-date.html"},
+	    "month-9-anthro":		{"table_id":"20010864","url":"edc/modules/anthro.html"},
+	    "month-9-ess":			{"table_id":"20010865","url":"edc/modules/ess.html"},
+	    "month-9-fosq":			{"table_id":"20010867","url":"edc/modules/fosq.html"},
+	    "month-9-dass":			{"table_id":"20010868","url":"edc/modules/dass.html"},
+	    "month-9-iwqol":		{"table_id":"20010870","url":"edc/modules/iwqol.html"},
+	    "month-9-ipaq":			{"table_id":"20010872","url":"edc/modules/ipaq.html"},
+	    "month-12-visit-date":	{"table_id":"20010873","url":"edc/modules/visit-date.html"},
+	    "month-12-psg":			{"table_id":"20010874","url":"edc/modules/file-upload.html"},
+	    "month-12-minmod":		{"table_id":"20010875","url":"edc/modules/minmod.html"},
+	    "month-12-anthro":		{"table_id":"20010876","url":"edc/modules/anthro.html"},
+	    "month-12-dxabis":		{"table_id":"20010877","url":"edc/modules/dxabis.html"},
+	    "month-12-bloods":		{"table_id":"20010878","url":"edc/modules/bloods.html"},
+	    "month-12-ess":			{"table_id":"20010879","url":"edc/modules/ess.html"},
+	    "month-12-fosq":		{"table_id":"20010881","url":"edc/modules/fosq.html"},
+	    "month-12-dass":		{"table_id":"20010882","url":"edc/modules/dass.html"},
+	    "month-12-iwqol":		{"table_id":"20010884","url":"edc/modules/iwqol.html"},
+	    "month-12-ipaq":		{"table_id":"20010886","url":"edc/modules/ipaq.html"},
+		"quest_list":{
+			"list":{
+				"Screening":[
+					{"table_id":"20010831","task_name":"Screening - Epworth Sleepiness Scale"}
+				],
+				"Baseline":[
+					{"table_id":"20010836","task_name":"Baseline - Epworth Sleepiness Scale"},
+				    {"table_id":"20010838","task_name":"Baseline - Functional Outcomes of Sleep Questionnair"},
+				    {"table_id":"20010839","task_name":"Baseline - Depression Anxiety Stress Scales"},
+				    {"table_id":"20010841","task_name":"Baseline - Impact of Weight on Quality Of Life.html"},
+				    {"table_id":"20010843","task_name":"Baseline - International Physical Activity Questionnaire"}
+				],
+				"Month 2":[
+					{"table_id":"20010853","task_name":"Month 2 - Epworth Sleepiness Scale"},
+					{"table_id":"20010855","task_name":"Month 2 - Functional Outcomes of Sleep Questionnair"},
+					{"table_id":"20010856","task_name":"Month 2 - Depression Anxiety Stress Scales"},
+					{"table_id":"20010858","task_name":"Month 2 - Impact of Weight on Quality Of Life.html"},
+					{"table_id":"20010860","task_name":"Month 2 - International Physical Activity Questionnaire"}
+				],
+				"Month 9":[
+					{"table_id":"20010865","task_name":"Month 9 - Epworth Sleepiness Scale"},
+				    {"table_id":"20010867","task_name":"Month 9 - Functional Outcomes of Sleep Questionnair"},
+				    {"table_id":"20010868","task_name":"Month 9 - Depression Anxiety Stress Scales"},
+				    {"table_id":"20010870","task_name":"Month 9 - Impact of Weight on Quality Of Life.html"},
+				    {"table_id":"20010872","task_name":"Month 9 - International Physical Activity Questionnaire"}
+				],
+				"Month 12":[
+					{"table_id":"20010879","task_name":"Month 12 - Epworth Sleepiness Scale"},
+				    {"table_id":"20010881","task_name":"Month 12 - Functional Outcomes of Sleep Questionnair"},
+				    {"table_id":"20010882","task_name":"Month 12 - Depression Anxiety Stress Scales"},
+				    {"table_id":"20010884","task_name":"Month 12 - Impact of Weight on Quality Of Life.html"},
+				    {"table_id":"20010886","task_name":"Month 12 - International Physical Activity Questionnaire"}
+				]
+			}
+		}
+	}
+}

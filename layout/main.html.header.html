@@ -17,7 +17,8 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" onclick="$vm.nav_load_module('website_home');"><i class="fa fa-home"></i> Home</a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" onclick="$vm.nav_load_module('flat');">FLAT</a></li>
-                <li><a class="nav-link" onclick="$vm.nav_click_process('vm_signinout');" name=signinout><i class="fa fa-user"></i> Sign In/Out</a></li>
+				<li class="nav-item" id=signin__ID >                     <a class="nav-link" onclick="$vm.nav_wappsystem_signin();" ><i class="fa fa-user"></i> Sign In</a></li>
+				<li class="nav-item" id=signout__ID style='display:none'><a class="nav-link" onclick=$vm.nav_signout() ><i class="fa fa-user"></i> Sign Out</a></li>
             </ul>
 			<!--
 			<form id=form__ID class="form-inline my-2 my-xl-0">
@@ -26,17 +27,30 @@
 		-->
         </div>
     </nav>
-    <script>
+	<script>
         //---------------------------------------------
-        if($vm.user=='guest'){
-            $('a[name=signinout]').html('<i class="fa fa-user"></i> Sign In')
-            $('#username__ID').text('');
-        }
-        else{
-            $('a[name=signinout]').html('<i class="fa fa-user"></i> Sign Out')
-            $('#username__ID').text('Signed in as '+ $vm.user);
-        }
+		var init_loop=setInterval(function (){
+			console.log('init_loop...')
+			if($vm.init_status==1){
+				clearInterval(init_loop);
+				show_user();
+			}
+		},100);
         //---------------------------------------------
+		var show_user=function(){
+			var third=""
+			if($vm.user=='guest'){
+				$('#username__ID').text('');
+				$('#signin__ID').show();
+				$('#signout__ID').hide();
+			}
+			else{
+				$('#username__ID').text('Signed in as '+ $vm.user+third);
+				$('#signin__ID').hide();
+				$('#signout__ID').show();
+			}
+		}
+		//---------------------------------------------
 		if(window.innerWidth <= 800 && window.innerHeight <= 600) {
 			$('#form__ID').parent().prepend($('#form__ID'));
 		}

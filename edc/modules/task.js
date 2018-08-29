@@ -142,7 +142,7 @@ var _set_status_and_participant=function(record,dbv){    //set status color, PUI
 };
 //-------------------------------------
 _new_pre_data_process=function(){
-    if($vm.vm['__ID'].op.participant_uid!==undefined) _records[0].Participant_uid=$vm.vm['__ID'].op.participant_uid;
-    if($vm.vm['__ID'].op.participant_name!==undefined) _records[0].Participant=$vm.vm['__ID'].op.participant_name;
+    if($vm.vm['__ID'].op.input.participant_uid!==undefined) _records[0].Participant_uid=$vm.vm['__ID'].op.input.participant_uid;
+    if($vm.vm['__ID'].op.input.participant_name!==undefined) _records[0].Participant=$vm.vm['__ID'].op.input.participant_name;
 }
 //-------------------------------------

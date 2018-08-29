@@ -54,8 +54,8 @@
                 $vm.alert("HR: 40-200");
                 return false;
             }
-
-            if(record.Weight_kg!='' && record.Height_cm!=''){
+            if(record.Weight_kg=='.' || record.Height_cm=='.') record.BMI='.'
+            else if(record.Weight_kg!='' && record.Height_cm!=''){
                 record.BMI=(parseFloat(record.Weight_kg)/(parseFloat(record.Height_cm)*parseFloat(record.Height_cm))*10000).toFixed(1);
             }
             return _set_status_and_participant(record,dbv);
